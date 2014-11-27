@@ -1,3 +1,8 @@
+#!/bin/bash
+## This script modify from someone blog 
+## Modified By Stupid father :) 
+## thanks for being here. 
+
 NGINX_CONFIG='/etc/nginx/sites-available'
 NGINX_SITES_ENABLED='/etc/nginx/sites-enabled'
 #WEB_DIR='/var/www'
