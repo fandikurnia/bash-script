@@ -1,0 +1,57 @@
+server { 
+	listen 80; ## Listen for ipv4; this line is default and implied
+	#listen [::]:80 default ipv6only=on; ## listen for ipv6 
+
+	set $root_path ROOT; 
+	#index index.html index.html index.php
+	access_log  /var/log/nginx/DOMAIN.log main; 
+	
+  	error_log /var/log/fandiakademik/error.log;
+	# Set Document Root; 
+	root 	$root_path;
+	set  	$yii_bootstrap "index.php";
+
+
+	# define charset
+	charset utf-8;
+
+	server_name DOMAIN www.DOMAIN; 	
+	
+	location / {
+		index index.html $yii_bootstrap; 
+		try_files $uri $uri/ /$yii_bootstrap$args;
+	}
+	
+	#deny access to protected directories 
+	
+	location ~ ^/(protected|framework|themes/w+/views){
+		deny all; 
+	} 
+	
+	# avoid processing of calls to unexisting static file by yii 
+	location ~ .(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
+		try_files $uri =404;
+	}
+	
+	# serve static file directly 
+	location ~* \.(jpg|jpeg|gif|css|png|js|ico|html)${
+		access_log off; 
+		expires max; 
+	}
+	# prevent nginx from serving dotfiles (.htaccess, .svn, .git, etc.) 
+	location ~ /\. {
+		deny all; 
+		access_log off; 
+		log_not_found off; 
+	}
+
+	
+	# php-fpm configuration using port 
+	
+	location ~ \.php$ {
+		include /etc/nginx/fastcgi_params; 
+		fastcgi_pass 127.0.0.1:9000;
+	 	fastcgi_index index.php; 
+		fastcgi_param SCRIPT_FILENAME $root_path$fastcgi_script_name; 
+	}	
+}
