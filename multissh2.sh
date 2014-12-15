@@ -31,11 +31,13 @@ execute_commands()
   IP=$(awk '{print $2}' <<< "$hasil") 
   echo "IP adalah " $IP
   user=$(awk '{print $3}' <<< "$hasil")
+  echo "Masukan Port SSH : " 
+  read sshport 
   echo "User adalah " $user 
   echo "ssh -v $user\@$IP" 
-  ssh -v $user\@$IP
+  ssh -v -p $sshport $user\@$IP
   
-  sleep 5
+  sleep 2
 }
 #########################################################
 ###########     FUNCTIONS                          #####
