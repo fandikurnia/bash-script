@@ -28,18 +28,17 @@ echo "Total" $total "server"
 execute_commands() 
 { 
   echo $FILE
-  hasil=$(head -n $choice $FILE)
+  hasil=$(sed -n "${choice}p" < $FILE)
   echo "hasil : $hasil "
   IP=$(awk '{print $2}' <<< "$hasil") 
   echo "IP adalah " $IP
   user=$(awk '{print $3}' <<< "$hasil")
-  echo "Masukan Port SSH : " 
-  read sshport 
+  echo "Masukan Port SSH : " read sshport 
   echo "User adalah " $user 
-  echo "ssh -v $user\@$IP" 
-  ssh -v -p $sshport $user\@$IP
-  
-  sleep 2
+  echo "ssh -v $user\@$IP \n" 
+  echo "ssh -v -p $sshport $user\@$IP"
+  break 
+  #sleep 1
 }
 #########################################################
 ###########     MAIN FUNCTION HERE                  #####
