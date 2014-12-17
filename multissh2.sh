@@ -27,6 +27,7 @@ echo "Total" $total "server"
 
 execute_commands() 
 { 
+  privatekey="/Users/fahrezafauzi/fandi-dropbox/bash-script/privateopenssh"
   echo $FILE
   hasil=$(sed -n "${choice}p" < $FILE)
   echo "hasil : $hasil "
@@ -36,9 +37,10 @@ execute_commands()
   echo "Masukan Port SSH : " read sshport 
   echo "User adalah " $user 
   echo "ssh -v $user\@$IP \n" 
-  echo "ssh -v -p $sshport $user\@$IP"
-  break 
-  #sleep 1
+  ssh -v -P $sshport -i privatekey $user\@$IP
+  #break 
+  echo "Please Wait Process will be new initialized.. Thanks"  
+  sleep 3
 }
 #########################################################
 ###########     MAIN FUNCTION HERE                  #####
