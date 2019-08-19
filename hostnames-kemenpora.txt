@@ -1,0 +1,18 @@
+JDIH 118.97.77.114 2122 fandikurnia
+KVM00 118.97.77.114 2128 fandikurnia
+KVM01 118.97.77.114 2123 fandikurnia
+KVM02 118.97.77.114 2124 fandikurnia
+CTRL 118.97.77.114 3032 fandikurnia
+GITLAB 118.97.77.114 3034 fandikurnia
+GIS 118.97.77.114 3031 fandikurnia
+PROXY 118.97.77.114 3035 fandikurnia
+MAIL 118.97.77.118 2212 fandikurnia
+EVALUASI 118.97.77.114 2121 fandikurnia
+KEPEGAWAIAN 118.97.77.114 2125 fandikurnia
+STORAGE 118.97.77.114 2127 fandikurnia
+HOSTING 118.97.77.114 2126 fandikurnia
+KEMENPORA-SERVER 203.130.196.143 fandikurnia
+local-kvm01	192.168.0.210	root 
+local-kvm02	192.168.0.211   root
+local-kvm03	192.168.0.209   root
+storagenfs 	192.168.0.11   root

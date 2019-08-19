@@ -1,0 +1,2664 @@
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-10T16:06:11.000Z", 
+                    "PrivateIpAddress": "10.0.2.133", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0ff88e87a03d1d6bd", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-07f9ab40379ca48e0", 
+                    "PrivateDnsName": "ip-10-0-2-133.ap-southeast-1.compute.internal", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "c5.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:ff:d3:88:35:fe", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-09f934b3d37a5b244", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-2-133.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.2.133"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-2-133.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-01df6c63b6ee1c86a", 
+                                "AttachTime": "2018-11-10T16:02:20.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.2.133"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0b2e47a18ab9f213a", 
+                                "AttachTime": "2018-11-10T16:02:21.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "Web2-JP-AWS-SG", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-04a76293a413ef581", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-14T01:31:48.000Z", 
+                    "PrivateIpAddress": "172.31.1.1", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "User initiated (2018-11-14 09:05:35 GMT)", 
+                    "InstanceId": "i-0bf3650bc7437b9e4", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c2c3a9a442d046ca", 
+                    "PrivateDnsName": "ip-172-31-1-1.ap-southeast-1.compute.internal", 
+                    "KeyName": "new-jpc", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "debian-launch-wizard-3", 
+                            "GroupId": "sg-f7016d8e"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-ed820189", 
+                    "InstanceType": "c5.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:2c:e1:da:d3:dc", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0e8bbf4dc7b8cfcf2", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-1-1.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.1.1"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-1-1.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-08eed13ed687cb85c", 
+                                "AttachTime": "2018-11-14T01:31:48.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "debian-launch-wizard-3", 
+                                    "GroupId": "sg-f7016d8e"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-ed820189", 
+                            "PrivateIpAddress": "172.31.1.1"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0bc1672cc6a243390", 
+                                "AttachTime": "2018-11-14T01:31:49.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Radar-FrontEnd-backup.jawapos.com", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-05ebacde24620b000", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-255-186-244.ap-southeast-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-10-23T08:41:36.000Z", 
+                    "PublicIpAddress": "54.255.186.244", 
+                    "PrivateIpAddress": "10.0.200.63", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-06501907eafe47e31", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-c63d6aa5", 
+                    "PrivateDnsName": "ip-10-0-200-63.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-in-bastion", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-BastionSecurityGroup-1092W2AUL1XH3", 
+                            "GroupId": "sg-015cb2479c8ac31de"
+                        }
+                    ], 
+                    "ClientToken": "dac59a80-586e-db33-8aff-1c573c6deffc_subnet-006f276809035d378_1", 
+                    "SubnetId": "subnet-006f276809035d378", 
+                    "InstanceType": "t2.nano", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:c1:43:46:fa:fc", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0d2ef1faeba8a4808", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-200-63.ap-southeast-1.compute.internal", 
+                                    "PrivateIpAddress": "10.0.200.63", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.255.186.244", 
+                                        "PublicDnsName": "ec2-54-255-186-244.ap-southeast-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-200-63.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-065b801ec8bc68b6c", 
+                                "AttachTime": "2018-10-23T08:41:36.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-BastionSecurityGroup-1092W2AUL1XH3", 
+                                    "GroupId": "sg-015cb2479c8ac31de"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "PrivateIpAddress": "10.0.200.63", 
+                            "SubnetId": "subnet-006f276809035d378", 
+                            "Association": {
+                                "PublicIp": "54.255.186.244", 
+                                "PublicDnsName": "ec2-54-255-186-244.ap-southeast-1.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-09ce3d2d87b60c151", 
+                                "AttachTime": "2018-10-23T08:41:37.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAINEWBXJXMY7U4OFQU", 
+                        "Arn": "arn:aws:iam::356555646297:instance-profile/CF-Bastion-Jawapos-ICS-BastionInstanceProfile-K8FJY6V1SIB6"
+                    }, 
+                    "RootDeviceName": "/dev/xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "arn:aws:cloudformation:ap-southeast-1:356555646297:stack/CF-Bastion-Jawapos-ICS/fd6d0f80-d69e-11e8-a9f0-02c89147ba84", 
+                            "Key": "aws:cloudformation:stack-id"
+                        }, 
+                        {
+                            "Value": "BastionAutoScalingGroup", 
+                            "Key": "aws:cloudformation:logical-id"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "CF-Bastion-Jawapos-ICS-BastionAutoScalingGroup-QDI4X8R3ZO2B", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "CF-Bastion-Jawapos-ICS", 
+                            "Key": "aws:cloudformation:stack-name"
+                        }, 
+                        {
+                            "Value": "Bastion / CF-Bastion-Jawapos-ICS", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-015b9afec50556bf6", 
+            "RequesterId": "895328257407", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-11-11T08:13:04.000Z", 
+                    "PrivateIpAddress": "10.0.1.230", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "User initiated (2018-11-11 09:10:58 GMT)", 
+                    "InstanceId": "i-06b6d8f18a544d2d9", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-1-230.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "t2.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:af:22:cc:48:86", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0ba78b0831ae297d8", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-1-230.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.1.230"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-1-230.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-06489ac546a704662", 
+                                "AttachTime": "2018-10-26T18:28:50.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.1.230"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0b24b5d8734e2b181", 
+                                "AttachTime": "2018-10-26T18:28:51.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Radar1 / CF-Radar1-Jawapos-ICS", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-08e1b4863b4b395d9", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-179-171-156.ap-southeast-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-10-25T13:45:54.000Z", 
+                    "PublicIpAddress": "54.179.171.156", 
+                    "PrivateIpAddress": "10.0.200.114", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-070647f02479c7de2", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-200-114.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "DevelopmentICS", 
+                            "GroupId": "sg-08432719c04c43e91"
+                        }
+                    ], 
+                    "ClientToken": "0a7697c5b653a42d9444b3b9dc909e5fabe94a4e4a01d847e45130af2264", 
+                    "SubnetId": "subnet-006f276809035d378", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:7e:6c:b0:01:36", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-038c1ff3ef49fdc37", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-200-114.ap-southeast-1.compute.internal", 
+                                    "PrivateIpAddress": "10.0.200.114", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.179.171.156", 
+                                        "PublicDnsName": "ec2-54-179-171-156.ap-southeast-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-200-114.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-083f4d9e93e865f6a", 
+                                "AttachTime": "2018-10-25T13:45:54.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "DevelopmentICS", 
+                                    "GroupId": "sg-08432719c04c43e91"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "PrivateIpAddress": "10.0.200.114", 
+                            "SubnetId": "subnet-006f276809035d378", 
+                            "Association": {
+                                "PublicIp": "54.179.171.156", 
+                                "PublicDnsName": "ec2-54-179-171-156.ap-southeast-1.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "InstanceLifecycle": "spot", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0daec48f98b8505e6", 
+                                "AttachTime": "2018-10-25T13:45:55.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "Dev1 / CF-Dev1-Jawapos-ICS", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "SpotInstanceRequestId": "sir-kv9iispp", 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0e1aaadb81ed95b3c", 
+            "RequesterId": "257867366987", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-11-11T01:12:28.000Z", 
+                    "PrivateIpAddress": "10.0.0.240", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-07c9f861cdccd131c", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-07f9ab40379ca48e0", 
+                    "PrivateDnsName": "ip-10-0-0-240.ap-southeast-1.compute.internal", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "89259c01-4ee8-1642-0e16-7e76d739b8b7_subnet-0840d1adad07c4e8f_1", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "c5.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:ce:9a:63:96:d8", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0f07c87d3721cee8c", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-0-240.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.0.240"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-0-240.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-076cb63bc7cbb65b9", 
+                                "AttachTime": "2018-11-11T01:12:28.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.0.240"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-03e9be183f8f43607", 
+                                "AttachTime": "2018-11-11T01:12:28.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "ASG-ICS-Jawapos-Frontend", 
+                            "Key": "aws:autoscaling:groupName"
+                        }, 
+                        {
+                            "Value": "ICS-Jawapos-AutoScaling-Frontend", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0c39b86add28bbfa1", 
+            "RequesterId": "895328257407", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-09T12:52:24.000Z", 
+                    "PrivateIpAddress": "10.0.1.22", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0b40a459312b005e0", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-1-22.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "c5.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:9b:fe:61:0b:3c", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-049213b6a292e1331", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-1-22.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.1.22"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-1-22.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-08cf5ebf91a783a66", 
+                                "AttachTime": "2018-10-24T09:12:28.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.1.22"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-04a94d88feb2a9f93", 
+                                "AttachTime": "2018-10-24T09:12:29.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Web1-JP-AWS-SG", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-095f82d3171f2dd66", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-3-0-105-183.ap-southeast-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-11-09T11:02:13.000Z", 
+                    "PublicIpAddress": "3.0.105.183", 
+                    "PrivateIpAddress": "10.0.200.166", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-072c6e34337183007", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-200-166.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Forwarder-ICS-Jawapos", 
+                            "GroupId": "sg-0b790f265d79e9eed"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-006f276809035d378", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:eb:09:ab:5f:d6", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0ad16f997b3cf9d0e", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-200-166.ap-southeast-1.compute.internal", 
+                                    "PrivateIpAddress": "10.0.200.166", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "3.0.105.183", 
+                                        "PublicDnsName": "ec2-3-0-105-183.ap-southeast-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "356555646297"
+                                    }
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-200-166.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-089dcc9d14d6e1917", 
+                                "AttachTime": "2018-11-09T09:47:20.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "Forwarder-ICS-Jawapos", 
+                                    "GroupId": "sg-0b790f265d79e9eed"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "PrivateIpAddress": "10.0.200.166", 
+                            "SubnetId": "subnet-006f276809035d378", 
+                            "Association": {
+                                "PublicIp": "3.0.105.183", 
+                                "PublicDnsName": "ec2-3-0-105-183.ap-southeast-1.compute.amazonaws.com", 
+                                "IpOwnerId": "356555646297"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-04c465e165da84bcf", 
+                                "AttachTime": "2018-11-09T09:47:20.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Forwarder-JP-AWS-SG", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-087cd8c12efa1a6ee", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2017-01-20T05:01:53.000Z", 
+                    "PrivateIpAddress": "172.31.20.173", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "6x5jmcajty9edm3f211pqjfn2", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "User initiated (2018-11-07 09:59:02 GMT)", 
+                    "InstanceId": "i-07642cca4c7ff9e6c", 
+                    "ImageId": "ami-106aa373", 
+                    "PrivateDnsName": "ip-172-31-20-173.ap-southeast-1.compute.internal", 
+                    "KeyName": "JAWAPOSCOM", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-2", 
+                            "GroupId": "sg-9debe1f9"
+                        }
+                    ], 
+                    "ClientToken": "148488850173583116", 
+                    "SubnetId": "subnet-9ad567ec", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:60:56:9d:13:d5", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-38cf5472", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-20-173.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.20.173"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-20-173.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-f3464c9d", 
+                                "AttachTime": "2017-01-20T05:01:53.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-2", 
+                                    "GroupId": "sg-9debe1f9"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-9ad567ec", 
+                            "PrivateIpAddress": "172.31.20.173"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-01fe8dd379a1a24d2", 
+                                "AttachTime": "2017-01-20T05:01:54.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdb", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-0306ed50fe6c163ef", 
+                                "AttachTime": "2017-01-20T05:01:54.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "JPGM", 
+                            "Key": "JPGM"
+                        }, 
+                        {
+                            "Value": "JP-Backup-JAWAPOS-JPNN-NFS", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0d082d72463cfb0ca", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-10-26T19:19:49.000Z", 
+                    "PrivateIpAddress": "10.0.100.58", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "User initiated (2018-11-11 08:17:51 GMT)", 
+                    "InstanceId": "i-0666c2a17702f0482", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-100-58.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-EFS", 
+                            "GroupId": "sg-0653e2f2048931501"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0267d70e3befc596c", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:26:80:91:f2:a4", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0144dd1d84161907c", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-100-58.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.100.58"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-100-58.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0552403b376f87864", 
+                                "AttachTime": "2018-10-26T19:19:49.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-EFS", 
+                                    "GroupId": "sg-0653e2f2048931501"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0267d70e3befc596c", 
+                            "PrivateIpAddress": "10.0.100.58"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-06bdf40ef4dd98321", 
+                                "AttachTime": "2018-10-26T19:19:50.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/xvdf", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-0fdb63c8720e4ffd9", 
+                                "AttachTime": "2018-10-30T22:52:57.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "Backup01 / CF-Backup01-Jawapos-ICS", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-09766b1046fd27233", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-255-148-22.ap-southeast-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-10-24T08:53:32.000Z", 
+                    "PublicIpAddress": "54.255.148.22", 
+                    "PrivateIpAddress": "172.31.7.210", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-053a0ce16687f7cbd", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-8efdd5f2", 
+                    "PrivateDnsName": "ip-172-31-7-210.ap-southeast-1.compute.internal", 
+                    "KeyName": "dev_jawapos", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "JPC_dev", 
+                            "GroupId": "sg-229c9c5b"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-ed820189", 
+                    "InstanceType": "t2.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:b6:9a:a8:d6:ae", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-ed50bbb6", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-7-210.ap-southeast-1.compute.internal", 
+                                    "PrivateIpAddress": "172.31.7.210", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "54.255.148.22", 
+                                        "PublicDnsName": "ec2-54-255-148-22.ap-southeast-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-7-210.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-a5b5fdc5", 
+                                "AttachTime": "2018-05-31T15:30:39.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "JPC_dev", 
+                                    "GroupId": "sg-229c9c5b"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "PrivateIpAddress": "172.31.7.210", 
+                            "SubnetId": "subnet-ed820189", 
+                            "Association": {
+                                "PublicIp": "54.255.148.22", 
+                                "PublicDnsName": "ec2-54-255-148-22.ap-southeast-1.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-03b2af338586a77c1", 
+                                "AttachTime": "2018-05-31T15:30:40.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "dev.jawapos.com", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-027fd3c2f0b469e8b", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-11-13T11:46:44.000Z", 
+                    "PrivateIpAddress": "10.0.0.111", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-060ee0b0866d7a63e", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0b7a93dd08cb5317f", 
+                    "PrivateDnsName": "ip-10-0-0-111.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "be159c33-948e-0c16-b5a3-70f93697e75f_subnet-0840d1adad07c4e8f_1", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "t2.small", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:d4:32:ca:fc:40", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-0b74bfafa91a14cf4", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-0-111.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.0.111"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-0-111.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-09cc7acdb2461ea92", 
+                                "AttachTime": "2018-11-13T11:46:44.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.0.111"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0d1d7e0eb341e089f", 
+                                "AttachTime": "2018-11-13T11:46:44.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "VM-Radar-01", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "ASG-Radar-Production-01", 
+                            "Key": "aws:autoscaling:groupName"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0e10cc75c74144072", 
+            "RequesterId": "895328257407", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-14T17:41:41.000Z", 
+                    "PrivateIpAddress": "10.0.2.145", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0891ace2f46b01527", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-05756c415b07ceaac", 
+                    "PrivateDnsName": "ip-10-0-2-145.ap-southeast-1.compute.internal", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "c5.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:1a:17:6b:7d:2a", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0d8c86f662b784447", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-2-145.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.2.145"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-2-145.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0d1d6706919e530a8", 
+                                "AttachTime": "2018-10-30T12:26:38.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.2.145"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0c1c7ebcd21a2da4b", 
+                                "AttachTime": "2018-10-30T12:26:39.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "Web1-CMS-JP-AWS-SG", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0b75599fcde74d10f", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-52-221-228-54.ap-southeast-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-11-14T15:29:07.000Z", 
+                    "PublicIpAddress": "52.221.228.54", 
+                    "PrivateIpAddress": "172.31.25.210", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0ef77ccee0f15bc44", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0f2f155432921be0f", 
+                    "PrivateDnsName": "ip-172-31-25-210.ap-southeast-1.compute.internal", 
+                    "KeyName": "jawaposcom-new", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "debian-launch-wizard-3", 
+                            "GroupId": "sg-f7016d8e"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-9ad567ec", 
+                    "InstanceType": "t2.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:3e:6d:91:e4:b4", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0c5c8c57f0878cd3b", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-25-210.ap-southeast-1.compute.internal", 
+                                    "PrivateIpAddress": "172.31.25.210", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "52.221.228.54", 
+                                        "PublicDnsName": "ec2-52-221-228-54.ap-southeast-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-25-210.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0b0eba53efc793f1f", 
+                                "AttachTime": "2018-11-10T09:33:23.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "debian-launch-wizard-3", 
+                                    "GroupId": "sg-f7016d8e"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "PrivateIpAddress": "172.31.25.210", 
+                            "SubnetId": "subnet-9ad567ec", 
+                            "Association": {
+                                "PublicIp": "52.221.228.54", 
+                                "PublicDnsName": "ec2-52-221-228-54.ap-southeast-1.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0ca85f1b0531a12c7", 
+                                "AttachTime": "2018-11-10T09:33:23.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "new2.jawapos.com", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-00c1a63c6df699ba4", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2017-01-19T14:47:29.000Z", 
+                    "PrivateIpAddress": "172.31.17.138", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "User initiated (2017-09-07 08:09:13 GMT)", 
+                    "InstanceId": "i-0a777da1f04aa0433", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-7243e611", 
+                    "PrivateDnsName": "ip-172-31-17-138.ap-southeast-1.compute.internal", 
+                    "KeyName": "JAWAPOSCOM", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-2", 
+                            "GroupId": "sg-9debe1f9"
+                        }
+                    ], 
+                    "ClientToken": "FQlJr1476486810113", 
+                    "SubnetId": "subnet-9ad567ec", 
+                    "InstanceType": "t2.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:dc:c7:0f:2b:c3", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-2a327461", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-17-138.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.17.138"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-17-138.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-676bcca8", 
+                                "AttachTime": "2016-10-14T23:13:30.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-2", 
+                                    "GroupId": "sg-9debe1f9"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-9ad567ec", 
+                            "PrivateIpAddress": "172.31.17.138"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "varnish.jawapos.com", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Jawapos", 
+                            "Key": "JPGM"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-01fd5a1cd104960a0", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-05-23T01:10:40.000Z", 
+                    "PrivateIpAddress": "172.31.24.120", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "User initiated (2018-11-07 09:51:40 GMT)", 
+                    "InstanceId": "i-0a72ad81163508a3f", 
+                    "ImageId": "ami-f068a193", 
+                    "PrivateDnsName": "ip-172-31-24-120.ap-southeast-1.compute.internal", 
+                    "KeyName": "JAWAPOSCOM", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-2", 
+                            "GroupId": "sg-9debe1f9"
+                        }
+                    ], 
+                    "ClientToken": "148295308543327008", 
+                    "SubnetId": "subnet-9ad567ec", 
+                    "InstanceType": "t2.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:2d:1f:63:cd:c9", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-89c777c3", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-24-120.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.24.120"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-24-120.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-1f068732", 
+                                "AttachTime": "2016-12-28T19:25:10.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-2", 
+                                    "GroupId": "sg-9debe1f9"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-9ad567ec", 
+                            "PrivateIpAddress": "172.31.24.120"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-0e300ff6a19ec83d5", 
+                                "AttachTime": "2016-12-28T19:25:10.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "JP-New-Fileserver", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Jawapos", 
+                            "Key": "JPGM"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-040ca4a6be2ddb276", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-10T17:01:37.000Z", 
+                    "PrivateIpAddress": "172.31.19.45", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "aw0evgkw8e5c1q413zgy5pjce", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "User initiated (2018-11-10 19:19:00 GMT)", 
+                    "InstanceId": "i-03ee45a0d93abcff7", 
+                    "ImageId": "ami-f068a193", 
+                    "PrivateDnsName": "ip-172-31-19-45.ap-southeast-1.compute.internal", 
+                    "KeyName": "JAWAPOSCOM", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "debian-launch-wizard-3", 
+                            "GroupId": "sg-f7016d8e"
+                        }
+                    ], 
+                    "ClientToken": "148294885875460309", 
+                    "SubnetId": "subnet-9ad567ec", 
+                    "InstanceType": "m4.4xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:44:1c:15:41:85", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-08d36342", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-19-45.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.19.45"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-19-45.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-b775f49a", 
+                                "AttachTime": "2016-12-28T18:15:22.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "debian-launch-wizard-3", 
+                                    "GroupId": "sg-f7016d8e"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-9ad567ec", 
+                            "PrivateIpAddress": "172.31.19.45"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-0f03548e4854aa295", 
+                                "AttachTime": "2016-12-28T18:15:22.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "radar.jawapos.com", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Jawapos", 
+                            "Key": "JPGM"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0611c3f6128dd1f64", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-14T17:48:37.000Z", 
+                    "PrivateIpAddress": "10.0.0.175", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-006dd5511bc6e1bbe", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0f58f1e6c1cd8a5c4", 
+                    "PrivateDnsName": "ip-10-0-0-175.ap-southeast-1.compute.internal", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "c5.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:b6:44:40:e4:c6", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0e74b5ee5f1c6a61d", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-0-175.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.0.175"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-0-175.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-02d825052e8c0af1a", 
+                                "AttachTime": "2018-11-10T16:04:20.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.0.175"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0a8c4ab2494fb55d8", 
+                                "AttachTime": "2018-11-10T16:04:21.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Web2-CMS-JP-AWS-SG", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-02cb71d972da8d478", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-18-136-103-102.ap-southeast-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-11-03T01:08:07.000Z", 
+                    "PublicIpAddress": "18.136.103.102", 
+                    "PrivateIpAddress": "172.31.14.87", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-067557868fd76db28", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c2c3a9a442d046ca", 
+                    "PrivateDnsName": "ip-172-31-14-87.ap-southeast-1.compute.internal", 
+                    "KeyName": "new-jpc", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-6", 
+                            "GroupId": "sg-048322ccd32fa14b8"
+                        }, 
+                        {
+                            "GroupName": "JPC_dev", 
+                            "GroupId": "sg-229c9c5b"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-ed820189", 
+                    "InstanceType": "t2.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:38:d0:69:22:3e", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "", 
+                            "NetworkInterfaceId": "eni-01100746be9f354f0", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-14-87.ap-southeast-1.compute.internal", 
+                                    "PrivateIpAddress": "172.31.14.87", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "18.136.103.102", 
+                                        "PublicDnsName": "ec2-18-136-103-102.ap-southeast-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-14-87.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0fc83597d1f302b2d", 
+                                "AttachTime": "2018-11-03T01:08:07.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-6", 
+                                    "GroupId": "sg-048322ccd32fa14b8"
+                                }, 
+                                {
+                                    "GroupName": "JPC_dev", 
+                                    "GroupId": "sg-229c9c5b"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "PrivateIpAddress": "172.31.14.87", 
+                            "SubnetId": "subnet-ed820189", 
+                            "Association": {
+                                "PublicIp": "18.136.103.102", 
+                                "PublicDnsName": "ec2-18-136-103-102.ap-southeast-1.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-01f2c8f3c99626454", 
+                                "AttachTime": "2018-11-03T01:08:08.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "radar-temp.jawapos.com", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0d0010de86df1d4a6", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-11-11T08:31:10.000Z", 
+                    "PrivateIpAddress": "10.0.0.89", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-07d42c00d20c534b6", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-054b9c46d9a94ed0b", 
+                    "PrivateDnsName": "ip-10-0-0-89.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-in-bastion", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                            "GroupId": "sg-0a19ee8618999d819"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0840d1adad07c4e8f", 
+                    "InstanceType": "t2.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:5d:bb:19:1a:ae", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-072ce01c2d1013b23", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-0-89.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.0.89"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-0-89.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0cad9020fbd9f2e5d", 
+                                "AttachTime": "2018-11-11T08:31:10.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-WebSecurityGroup-LFQD5JC028BM", 
+                                    "GroupId": "sg-0a19ee8618999d819"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0840d1adad07c4e8f", 
+                            "PrivateIpAddress": "10.0.0.89"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-033deeeebc89bfce5", 
+                                "AttachTime": "2018-11-11T08:31:11.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "ics", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "", 
+                            "Key": "Radar2 / CF-Radar1-dari jawapos"
+                        }, 
+                        {
+                            "Value": "Radar Prod / CF-Radar2-Jawapos-ICS", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-021d37bc3d3637f9d", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-06T08:43:26.000Z", 
+                    "PrivateIpAddress": "10.0.100.78", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0c0509393b001b876", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-100-78.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0713700752443c4cf"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0267d70e3befc596c", 
+                    "InstanceType": "c5.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:7f:8f:de:d8:9c", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0162fd21c52fe06dd", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-100-78.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.100.78"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-100-78.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0d061eac0789cdd54", 
+                                "AttachTime": "2018-11-06T08:43:26.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0713700752443c4cf"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0267d70e3befc596c", 
+                            "PrivateIpAddress": "10.0.100.78"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-024c1e5aa422a4625", 
+                                "AttachTime": "2018-11-06T08:43:26.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "NFS-JP-AWS-SG", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ics", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0c43d3956473296ae", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-06T10:35:39.000Z", 
+                    "PrivateIpAddress": "172.31.28.17", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-541ad730", 
+                    "StateTransitionReason": "User initiated (2018-11-12 02:38:56 GMT)", 
+                    "InstanceId": "i-0f4f7af6c938aa03f", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0e2164c1a36d74034", 
+                    "PrivateDnsName": "ip-172-31-28-17.ap-southeast-1.compute.internal", 
+                    "KeyName": "new-jpc", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "debian-launch-wizard-3", 
+                            "GroupId": "sg-f7016d8e"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-9ad567ec", 
+                    "InstanceType": "m4.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "06:c6:c5:df:c3:de", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-541ad730", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-00a542095509dce5b", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-28-17.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.28.17"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-28-17.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0a926b6377b4f27ac", 
+                                "AttachTime": "2018-11-06T10:35:39.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "debian-launch-wizard-3", 
+                                    "GroupId": "sg-f7016d8e"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-9ad567ec", 
+                            "PrivateIpAddress": "172.31.28.17"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0a103ffba4ba46af9", 
+                                "AttachTime": "2018-11-06T10:35:39.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "new4.jawapos.com", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-07a80ca3759d9747f", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2018-10-26T19:13:30.000Z", 
+                    "PrivateIpAddress": "10.0.100.117", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0b79018589169e133", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-100-117.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "CF-SecurityGroup-Jawapos-ICS-EFS", 
+                            "GroupId": "sg-0653e2f2048931501"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0267d70e3befc596c", 
+                    "InstanceType": "t2.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:98:f1:28:20:e0", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0b5a524a106bb2c0c", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-100-117.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.100.117"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-100-117.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-00cb72110fa597925", 
+                                "AttachTime": "2018-10-26T19:13:30.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "CF-SecurityGroup-Jawapos-ICS-EFS", 
+                                    "GroupId": "sg-0653e2f2048931501"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0267d70e3befc596c", 
+                            "PrivateIpAddress": "10.0.100.117"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-02939a26970f48652", 
+                                "AttachTime": "2018-10-26T19:13:30.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "FS1 / CF-FS1-Jawapos-ICS", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-04c7294b982f68670", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }, 
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-11-09T09:22:34.000Z", 
+                    "PrivateIpAddress": "10.0.100.44", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0b845a6335941b5c4", 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0cf42cedf8893154e", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-0c5199d385b432989", 
+                    "PrivateDnsName": "ip-10-0-100-44.ap-southeast-1.compute.internal", 
+                    "KeyName": "key-bastion-Jawapos-ICS", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-0713700752443c4cf"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0267d70e3befc596c", 
+                    "InstanceType": "c5.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:83:33:4c:20:6c", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0b845a6335941b5c4", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-0c946a373e9e1c95f", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-0-100-44.ap-southeast-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.0.100.44"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-0-100-44.ap-southeast-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0154071ee6f4ffef0", 
+                                "AttachTime": "2018-11-09T09:22:34.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-0713700752443c4cf"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "356555646297", 
+                            "SubnetId": "subnet-0267d70e3befc596c", 
+                            "PrivateIpAddress": "10.0.100.44"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "ap-southeast-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-08d90e0cc248114ea", 
+                                "AttachTime": "2018-11-09T09:22:35.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "ICS", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "NFS-CMS-AWS-SG", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-05f0dd7ecb8afee41", 
+            "Groups": [], 
+            "OwnerId": "356555646297"
+        }
+    ]
+}

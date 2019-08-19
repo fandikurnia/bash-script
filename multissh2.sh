@@ -27,20 +27,24 @@ echo "Total" $total "server"
 
 execute_commands() 
 { 
-  privatekey="/Users/fahrezafauzi/fandi-dropbox/bash-script/privateopenssh"
+  #privatekey="/Users/fahrezafauzi/fandi-dropbox/bash-script/privateopenssh"
+  privatekey="/home/fandikurnia/.ssh/id_rsa"
   echo $FILE
   hasil=$(sed -n "${choice}p" < $FILE)
   echo "hasil : $hasil "
   IP=$(awk '{print $2}' <<< "$hasil") 
   echo "IP adalah " $IP
-  user=$(awk '{print $3}' <<< "$hasil")
-  echo "Masukan Port SSH : " read sshport 
+  PORT=$(awk '{print $3}' <<< "$hasil")
+  echo "PORT : " $PORT
+  user=$(awk '{print $4}' <<< "$hasil")
+  #echo "Masukan Port SSH : " read sshport 
   echo "User adalah " $user 
-  echo "ssh -v $user\@$IP \n" 
-  ssh -v -P $sshport -i privatekey $user\@$IP
+  
+  #echo "ssh -v $user\@$IP \n" 
+  ssh -p $PORT -i $privatekey $user\@$IP
   #break 
   echo "Please Wait Process will be new initialized.. Thanks"  
-  sleep 3
+  sleep 2 
 }
 #########################################################
 ###########     MAIN FUNCTION HERE                  #####
