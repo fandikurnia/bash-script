@@ -1,7 +1,0 @@
-ilmart1  10.167.1.11 root
-ilmart2  10.167.1.12 root
-imdev 	10.167.1.16 root
-imgsd 10.167.1.17 root
-imgsd 10.167.1.17 root
-OGG-FTP-Pub 13.251.10.214 root
-
