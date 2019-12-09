@@ -1,1 +1,0 @@
-server1 34.228.75.181 linuxacademy
